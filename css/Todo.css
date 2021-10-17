@@ -1,0 +1,76 @@
+.todo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80vh;
+  align-items: center;
+}
+.todo .input input {
+  background: linear-gradient(
+    110.73deg,
+    rgba(255, 255, 255, 0.5) 0.36%,
+    rgba(255, 255, 255, 0.195) 100%
+  );
+  backdrop-filter: blur(120px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  color: white;
+  margin: 15px 0px;
+}
+
+.todo .input button {
+  background: linear-gradient(
+    110.73deg,
+    rgba(255, 255, 255, 0.5) 0.36%,
+    rgba(255, 255, 255, 0.195) 100%
+  );
+  backdrop-filter: blur(120px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  color: white;
+  margin: 15px 0px;
+  cursor: pointer;
+}
+.todo .todolist {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+.todo .todolist > div {
+  background: linear-gradient(
+    134.36deg,
+    rgba(255, 255, 255, 0.36) -1.14%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  backdrop-filter: blur(10px);
+  padding: 2% 15px;
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 12px;
+}
+
+.todo .todolist > div:nth-child(1) {
+  grid-row: 1/3;
+}
+.todo .todolist .list {
+  color: white;
+}
+
+@media All and (max-width: 600px) {
+  .todo .todolist {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .container {
+    padding: 2px 20px;
+  }
+}

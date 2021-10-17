@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  list-style-type: none;
+}
+:root {
+  --clr-primary: #ececec;
+}
+body {
+  background: linear-gradient(116.82deg, #fe7e7e 0%, #ef8f8f 100%);
+}
+#body {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 1024px;
+  height: 100vh;
+}
+#navbar {
+  display: none;
+}
+.navbar > .drawer {
+  display: none;
+}
+
+.navbar {
+  padding: 2% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .navlinks ul {
+  display: flex;
+}
+.navbar .navlinks ul li {
+  padding: 0 10px;
+}
+.navbar .navlinks ul li a {
+  color: var(--clr-primary);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+}
+.maincontent {
+  margin: auto 0;
+}
+.content h1 {
+  font-size: 84px;
+  margin-bottom: 40px;
+  color: var(--clr-primary);
+}
+.Responsive {
+  padding: 2% 0;
+  display: block !important;
+  background: linear-gradient(
+    134.36deg,
+    rgba(255, 255, 255, 0.36) -1.14%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+  margin: 20px 0px;
+}
+.Responsive ul li {
+  padding: 10px 5px;
+  width: 100%;
+}
+.Responsive ul li a {
+  color: var(--clr-primary);
+}
+.Responsive ul li:hover {
+  background-color: tomato;
+
+  color: black;
+}
+.content .maincontent > a {
+  font-size: 16px;
+  background: linear-gradient(
+    134.36deg,
+    rgba(255, 255, 255, 0.36) -1.14%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  backdrop-filter: blur(10px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 12px;
+  padding: 10px 20px;
+  color: var(--clr-primary);
+}
+
+@media All and (max-width: 600px) {
+  .container {
+    width: 100vw;
+  }
+  .navlinks {
+    display: none;
+  }
+  .content h1 {
+    font-size: 46px;
+  }
+
+  .drawer {
+    display: block !important;
+  }
+}
